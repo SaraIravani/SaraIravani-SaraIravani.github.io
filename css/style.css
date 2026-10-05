@@ -237,13 +237,13 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
   --sans: "Inter", Arial, sans-serif;
   --mono: "JetBrains Mono", Consolas, monospace;
 
-  --bg: #071426;
-  --fg: #eaf2ff;
-  --fg-soft: #c7d6e8;
-  --muted: #91a4ba;
-  --border: #183a5c;
-  --thumb-bg: #0b1f3a;
-  --code-bg: #0b1f3a;
+  --bg: #0F172A;
+  --fg: #E5E7EB;
+  --fg-soft: #CBD5E1;
+  --muted: #94A3B8;
+  --border: #1E293B;
+  --thumb-bg: #111827;
+  --code-bg: #111827;
   --invert-bg: #eaf2ff;
   --invert-fg: #071426;
 
@@ -252,8 +252,8 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
 
 /* Main page */
 body {
-  background-color: #071426;
-  color: #eaf2ff;
+  background-color: #0F172A;
+  color: #E5E7EB;
   font-family: "Inter", Arial, sans-serif;
 }
 
@@ -310,9 +310,9 @@ a:hover {
 
 /* Header */
 .site-header {
-  background: #071426;
-  border-top-color: #183a5c;
-  border-bottom-color: #183a5c;
+  background: #0F172A;
+  border-top-color: #1E293B;
+  border-bottom-color: #1E293B;
 }
 
 .site-title {
@@ -428,9 +428,9 @@ a:hover {
 
 /* Footer */
 .site-footer {
-  background: #071426;
-  border-top-color: #183a5c;
-  color: #91a4ba;
+  background: #0F172A;
+  border-top-color: #1E293B;
+  color: #94A3B8;
 }
 
 .footer-heading {
@@ -440,6 +440,6 @@ a:hover {
 /* Mobile */
 @media screen and (max-width: 700px) {
   body {
-    background-color: #071426;
+    background-color: #0F172A;
   }
 }
