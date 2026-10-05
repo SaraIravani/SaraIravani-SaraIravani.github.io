@@ -230,9 +230,36 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
 }
 /* ===== Modern Font ===== */
 
-html,
+/* ===== SARA MODERN TECH THEME ===== */
+
+:root {
+  --accent-base: #3b82f6;
+  --accent: #60a5fa;
+
+  --sans: "Inter", Arial, sans-serif;
+  --mono: "JetBrains Mono", monospace;
+
+  --bg: #071426;
+  --fg: #eaf2ff;
+  --fg-soft: #c7d6e8;
+  --muted: #91a4ba;
+  --border: #183a5c;
+  --thumb-bg: #0b1f3a;
+  --code-bg: #0b1f3a;
+  --invert-bg: #eaf2ff;
+  --invert-fg: #071426;
+
+  color-scheme: dark;
+}
+
 body {
-  font-family: "Inter", sans-serif;
+  background:
+    linear-gradient(rgba(59, 130, 246, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.035) 1px, transparent 1px),
+    #071426;
+  background-size: 40px 40px;
+  color: #eaf2ff;
+  font-family: "Inter", Arial, sans-serif;
 }
 
 h1,
@@ -244,15 +271,49 @@ h6,
 p,
 li,
 a,
-button,
-input,
-textarea,
-select {
-  font-family: "Inter", sans-serif;
+button {
+  font-family: "Inter", Arial, sans-serif;
 }
 
 code,
 pre,
 .mono {
   font-family: "JetBrains Mono", monospace;
+}
+
+a {
+  color: #60a5fa;
+}
+
+a:hover {
+  color: #93c5fd;
+}
+
+.site-header {
+  background: rgba(7, 20, 38, 0.92);
+  border-bottom: 1px solid #183a5c;
+}
+
+.item,
+.archive-item,
+.article-card,
+.project-card {
+  background: rgba(11, 31, 58, 0.75);
+  border-color: #183a5c;
+}
+
+button,
+.btn {
+  background: #2563eb;
+  color: white;
+}
+
+button:hover,
+.btn:hover {
+  background: #3b82f6;
+}
+
+footer {
+  border-top-color: #183a5c;
+  color: #91a4ba;
 }
