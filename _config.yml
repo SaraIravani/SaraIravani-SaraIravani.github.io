@@ -48,7 +48,7 @@ appearance:
   accent_color: "#2563EB"
   recent_items_on_home: 5
   background_pattern: "grid"
-  theme_mode: "auto"
+  theme_mode: "dark"
   font_style: "default"
 
 plugins:
