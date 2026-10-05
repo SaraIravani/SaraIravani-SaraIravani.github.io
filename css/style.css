@@ -228,3 +228,31 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
   .archive-year > h2 { margin-bottom: 10px; }
   .archive-item { grid-column: 1; grid-template-columns: 55px 1fr 20px; }
 }
+/* ===== Modern Font ===== */
+
+html,
+body {
+  font-family: "Inter", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+li,
+a,
+button,
+input,
+textarea,
+select {
+  font-family: "Inter", sans-serif;
+}
+
+code,
+pre,
+.mono {
+  font-family: "JetBrains Mono", monospace;
+}
