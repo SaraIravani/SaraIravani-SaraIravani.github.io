@@ -1,7 +1,7 @@
 :root {
   --accent-base: #00008b;
   --accent: var(--accent-base);
-  --sans: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --sans: "Inter", sans-serif;
   --hand: "Patrick Hand", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
   --bg: #fdfdfd;
