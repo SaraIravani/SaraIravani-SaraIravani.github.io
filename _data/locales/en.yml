@@ -15,13 +15,13 @@ cv: "CV"
 
 about:
 
-* "DevOps / Platform Engineer with 10+ years of experience building and operating cloud and Kubernetes platforms across AWS and on-premises environments."
+* "Senior DevOps / Platform Engineer with 10+ years of experience building and operating cloud and Kubernetes platforms across AWS and on-premises environments."
 * "My experience spans AWS infrastructure, Kubernetes, infrastructure as code, CI/CD, observability, production operations, and platform security."
 * "This portfolio presents selected professional experience, technical case studies, and personal projects that reflect how I build, operate, and improve production platforms."
 
 about_page:
 title: "About me"
-intro: "DevOps / Platform Engineer with 10+ years of experience building and operating cloud and Kubernetes platforms across AWS and on-premises environments. Experienced in infrastructure automation, CI/CD, container platforms, monitoring, and production operations, with a focus on reliable, scalable, and secure infrastructure."
+intro: "Senior DevOps / Platform Engineer with 10+ years of experience building and operating cloud and Kubernetes platforms across AWS and on-premises environments. Experienced in infrastructure automation, CI/CD, container platforms, monitoring, and production operations, with a focus on reliable, scalable, and secure infrastructure."
 sections:
 - title: "Background"
 paragraphs:
