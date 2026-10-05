@@ -1,10 +1,10 @@
 locale: "en-US"
-title: "Your Name"
-description: "Software Engineer and Researcher"
-url: "https://yourname.github.io"
-baseurl: ""
-repository: "yourname/yourname.github.io"
-timezone: "Europe/Rome"
+title: "Sara Iravani"
+description: "DevOps / Platform Engineer"
+url: "https://sarairavani.github.io"
+baseurl: "/SaraIravani-SaraIravani.github.io"
+repository: "SaraIravani/SaraIravani-SaraIravani.github.io"
+timezone: "America/Toronto"
 logo: "/images/profile.svg"
 
 template:
@@ -22,15 +22,15 @@ discussions:
   category_id: ""
 
 author:
-  name: "Your Name"
-  role: "Your Role"
-  education: "Your Second Role or Field of Study"
-  location: "Your City, Country"
+  name: "Sara Iravani"
+  role: "DevOps / Platform Engineer"
+  education: "B.Sc. Software Engineering"
+  location: "Toronto, Canada"
   email: ""
   avatar: "/images/profile.svg"
   cv: ""
-  github: "https://github.com/yourname"
-  linkedin: "https://www.linkedin.com/in/yourname"
+  github: "https://github.com/SaraIravani"
+  linkedin: "https://www.linkedin.com/in/sara-iravani"
   scholar: ""
   orcid: ""
 
@@ -45,7 +45,7 @@ languages:
       home_url: "/it/"
 
 appearance:
-  accent_color: "#2b2b2b"
+  accent_color: "#2563EB"
   recent_items_on_home: 5
   background_pattern: "grid"
   theme_mode: "auto"
