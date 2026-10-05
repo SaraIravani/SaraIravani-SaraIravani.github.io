@@ -13,27 +13,25 @@ navigation:
   contact: "Contact"
   cv: "CV"
 
-about:
-  - "DevOps / Platform Engineer with 10+ years of experience building and operating cloud and Kubernetes platforms across AWS and on-premises environments."
-  - "My experience spans infrastructure automation, Kubernetes, CI/CD, observability, production operations, and platform security."
-  - "This portfolio presents selected professional experience, technical case studies, and personal projects that reflect how I build, operate, and improve production platforms."
-
 about_page:
   title: "About me"
-  intro: "DevOps / Platform Engineer with 10+ years of experience building and operating cloud and Kubernetes platforms across AWS and on-premises environments. My experience spans infrastructure automation, Kubernetes, CI/CD, observability, production operations, and platform security, with a focus on building reliable, scalable, and maintainable infrastructure."
+  intro: "Senior DevOps / Platform Engineer with 10+ years of experience building and operating cloud and Kubernetes platforms across AWS and on-premises environments. My experience spans infrastructure automation, Kubernetes, CI/CD, observability, production operations, and platform security, with a focus on building reliable, scalable, and maintainable infrastructure."
 
   sections:
-    - title: "Professional Background"
+    - title: "About Me"
+      paragraphs:
+        - "I am a Senior DevOps / Platform Engineer focused on building and operating reliable infrastructure and Kubernetes platforms. My experience combines traditional infrastructure, cloud environments, automation, and production operations."
+
+    - title: "My Engineering Journey"
       paragraphs:
         - "I started my career in system administration, working with Linux and Microsoft environments and supporting enterprise infrastructure. My early experience included Windows Server, Active Directory, VMware and Hyper-V virtualization, server administration, and infrastructure monitoring."
-        - "As my experience grew, I moved toward infrastructure automation, Linux-based environments, and platform engineering. I expanded my experience across virtualization, networking, configuration management, monitoring, and production infrastructure, gradually moving into DevOps and Kubernetes-focused roles."
-        - "Over the past 10+ years, I have worked across enterprise, banking, and airline environments, supporting production platforms and business-critical workloads. My experience has evolved from traditional system and infrastructure administration into automation, CI/CD, cloud infrastructure, container platforms, and Kubernetes-based environments."
-        - "Working across both traditional and modern infrastructure has given me a broad understanding of how systems, applications, networking, security, and infrastructure work together to support reliable production environments."
+        - "As my experience grew, I moved toward Linux-based environments, infrastructure automation, configuration management, networking, monitoring, and production infrastructure. This gradually led me into DevOps, Kubernetes, and platform engineering."
+        - "Over the past 10+ years, I have worked across enterprise, banking, and airline environments, evolving from traditional system and infrastructure administration toward automation, CI/CD, cloud infrastructure, container platforms, and Kubernetes-based environments."
 
     - title: "What I Work On"
       paragraphs:
-        - "I work across infrastructure, automation, and platform engineering, with experience supporting production environments from traditional infrastructure to modern Kubernetes-based platforms."
-        - "My experience includes infrastructure and systems operations, infrastructure as code and configuration automation, Kubernetes and container platforms, AWS infrastructure, CI/CD and deployment automation, monitoring and troubleshooting, and infrastructure security and access control."
+        - "My work focuses on infrastructure, automation, and platform engineering across both traditional and modern environments."
+        - "I have experience with AWS infrastructure, Kubernetes and container platforms, Terraform and configuration automation, CI/CD and deployment automation, monitoring and observability, production troubleshooting, access control, and infrastructure security."
 
     - title: "How I Approach Engineering"
       paragraphs:
@@ -41,10 +39,10 @@ about_page:
         - "When solving infrastructure problems, I look beyond the immediate symptom and consider reliability, maintainability, security, and operational impact."
         - "I also document technical decisions and lessons learned so that systems and operational processes are easier to understand, maintain, and improve."
 
-    - title: "Working Environments"
+    - title: "Production Experience"
       paragraphs:
-        - "My experience includes both traditional and modern infrastructure environments, including on-premises enterprise infrastructure, air-gapped environments, AWS cloud platforms, Kubernetes clusters, and production workloads in banking and airline domains."
-        - "Working across these environments has helped me adapt to different operational constraints, infrastructure models, and business requirements while maintaining a focus on reliability and practical operations."
+        - "My experience includes supporting production environments where reliability, security, performance, and operational continuity are important. I have worked across AWS cloud platforms, Kubernetes clusters, on-premises infrastructure, air-gapped enterprise environments, and production workloads in banking and airline domains."
+        - "Working across these environments has given me a broad understanding of how infrastructure, applications, networking, security, and operations work together to support business-critical systems."
 
     - title: "Continuous Learning"
       paragraphs:
