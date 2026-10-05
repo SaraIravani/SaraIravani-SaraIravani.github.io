@@ -228,16 +228,14 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
   .archive-year > h2 { margin-bottom: 10px; }
   .archive-item { grid-column: 1; grid-template-columns: 55px 1fr 20px; }
 }
-/* ===== Modern Font ===== */
+/* ===== SARA FINAL THEME ===== */
 
-/* ===== SARA MODERN TECH THEME ===== */
-
-:root {
+:root[data-theme="dark"] {
   --accent-base: #3b82f6;
   --accent: #60a5fa;
 
   --sans: "Inter", Arial, sans-serif;
-  --mono: "JetBrains Mono", monospace;
+  --mono: "JetBrains Mono", Consolas, monospace;
 
   --bg: #071426;
   --fg: #eaf2ff;
@@ -252,16 +250,28 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
   color-scheme: dark;
 }
 
+/* Main page */
 body {
-  background:
-    linear-gradient(rgba(59, 130, 246, 0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59, 130, 246, 0.035) 1px, transparent 1px),
-    #071426;
-  background-size: 40px 40px;
+  background-color: #071426;
   color: #eaf2ff;
   font-family: "Inter", Arial, sans-serif;
 }
 
+/* Blueprint grid */
+:root[data-bg="grid"] body {
+  background-image:
+    linear-gradient(rgba(59, 130, 246, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(59, 130, 246, 0.035) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* Force Inter even if the template's font toggle was previously saved */
+:root[data-font="hand"] body {
+  font-family: "Inter", Arial, sans-serif;
+  font-size: 16px;
+}
+
+/* Typography */
 h1,
 h2,
 h3,
@@ -277,10 +287,19 @@ button {
 
 code,
 pre,
-.mono {
-  font-family: "JetBrains Mono", monospace;
+.mono,
+.page-count,
+.item-heading > span,
+.item-role,
+.writing-topic,
+.writing-item time,
+.entry-row time,
+.archive-item time,
+.archive-item p {
+  font-family: "JetBrains Mono", Consolas, monospace;
 }
 
+/* Links */
 a {
   color: #60a5fa;
 }
@@ -289,31 +308,138 @@ a:hover {
   color: #93c5fd;
 }
 
+/* Header */
 .site-header {
-  background: rgba(7, 20, 38, 0.92);
-  border-bottom: 1px solid #183a5c;
+  background: #071426;
+  border-top-color: #183a5c;
+  border-bottom-color: #183a5c;
+}
+
+.site-title {
+  color: #eaf2ff;
+}
+
+/* Navigation */
+.page-link {
+  color: #eaf2ff;
+}
+
+.page-link:hover,
+.page-link.is-current {
+  color: #60a5fa;
+  border-bottom-color: #60a5fa;
+}
+
+/* Buttons */
+.nav-cv,
+.footer-cv {
+  background: #eaf2ff;
+  color: #071426 !important;
+}
+
+.nav-cv:hover,
+.footer-cv:hover {
+  background: #3b82f6;
+  color: #ffffff !important;
+}
+
+/* Controls */
+.nav-toggle,
+.theme-toggle,
+.bg-toggle,
+.font-toggle {
+  background: #0b1f3a;
+  border-color: #183a5c;
+  color: #91a4ba;
+}
+
+.nav-toggle:hover,
+.theme-toggle:hover,
+.bg-toggle:hover,
+.font-toggle:hover,
+.font-toggle.is-active {
+  border-color: #60a5fa;
+  color: #60a5fa;
+}
+
+/* Titles */
+.page-title {
+  color: #eaf2ff;
+}
+
+.section-title {
+  color: #eaf2ff;
+  border-bottom-color: #183a5c;
+}
+
+/* Content lists */
+.item-list,
+.blog-list,
+.writing-list,
+.recent-list {
+  background: transparent;
+  border-top-color: #183a5c;
 }
 
 .item,
-.archive-item,
-.article-card,
-.project-card {
-  background: rgba(11, 31, 58, 0.75);
+.blog-item,
+.writing-item,
+.entry-row,
+.archive-item {
+  border-bottom-color: #183a5c;
+}
+
+.item-title,
+.writing-item h2,
+.writing-item h3,
+.entry-row h2,
+.blog-item h2,
+.blog-item h3 {
+  color: #eaf2ff;
+}
+
+.item-desc {
+  color: #c7d6e8;
+}
+
+.item-role,
+.item-tags,
+.post-date,
+.page-intro,
+.section-intro,
+.writing-item div > p:last-child,
+.entry-technologies {
+  color: #91a4ba;
+}
+
+/* Cards / thumbnails */
+.item-thumb,
+.writing-item .entry-thumb,
+.entry-row .entry-thumb {
+  background: #0b1f3a;
+}
+
+/* Code */
+.article-content pre,
+.article-content code {
+  background: #0b1f3a;
   border-color: #183a5c;
 }
 
-button,
-.btn {
-  background: #2563eb;
-  color: white;
-}
-
-button:hover,
-.btn:hover {
-  background: #3b82f6;
-}
-
-footer {
+/* Footer */
+.site-footer {
+  background: #071426;
   border-top-color: #183a5c;
   color: #91a4ba;
+}
+
+.footer-heading {
+  color: #eaf2ff;
+}
+
+/* Mobile */
+@media screen and (max-width: 700px) {
+  body {
+    background-color: #071426;
+  }
 }
