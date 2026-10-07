@@ -1,5 +1,4 @@
 ---
-
 title: "TATA / Tejarat Bank"
 date: 2023-01-01
 type: project
@@ -7,14 +6,14 @@ lang: en
 layout: case-study
 role: "Kubernetes / DevOps Engineer"
 technologies:
-
-* Kubernetes
-* Docker
-* Docker Swarm
-* Docker Compose
-* CI/CD
-* Automation
-* Monitoring
+  - Kubernetes
+  - Docker
+  - Docker Swarm
+  - Docker Compose
+  - CI/CD
+  - Automation
+  - Monitoring
+permalink: /work/tata-tejarat-bank/
 
 ---
 
