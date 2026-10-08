@@ -39,21 +39,97 @@ My hands-on contribution included:
 
 ## Environment and Constraints
 
-I worked in a highly restricted, air-gapped environment within the Tejarat Bank infrastructure. The servers and virtual machines did not have direct Internet access, so internal repositories and controlled infrastructure were required for application delivery and platform operations.
+I worked in a highly restricted environment within the Tejarat Bank infrastructure. The infrastructure was based on VMware ESXi, and the virtual machines had no direct Internet access.
 
-The environment included multiple application projects and separate Dev, QA, staging, and production environments. Across the projects I supported, more than 80 microservices were running on the platforms.
+External dependencies and Internet-dependent requirements were handled through controlled internal access. Application teams used internal JFrog repositories for required dependencies and artifacts, with proxy-based access used where external connectivity was required.
 
-The infrastructure was based on VMware ESXi, with HAProxy used within the environment for application traffic handling. Internal JFrog repositories were used to provide required application dependencies and artifacts without relying on direct Internet access.
+The environment included multiple application projects and separate Dev, QA, staging, and production environments, with more than 80 microservices running across the projects I supported.
+
+For the Kubernetes clusters, HAProxy and Keepalived were used for cluster traffic and high availability, with NGINX Ingress used as the ingress layer for application traffic.
+
+The platform evolved from Docker Compose and Docker Swarm workloads to Kubernetes as the main orchestration platform, so I supported different deployment models across projects.
 
 The platform evolved over time. Some workloads initially ran using Docker Compose and Docker Swarm, while Kubernetes later became the main container orchestration platform. This required supporting different deployment models and operational requirements during the transition and across different application projects.
 
-## Environment and Constraints
-
-[To be completed]
-
 ## Architecture
 
-[To be completed]
+The environment was built on VMware ESXi, with virtual machines supporting the Kubernetes platform and application workloads. The architecture supported multiple application projects across Dev, QA, staging, and production environments.
+
+### Kubernetes API Endpoint
+
+The Kubernetes clusters used Keepalived and HAProxy to provide a stable Kubernetes API endpoint. Keepalived provided a Virtual IP (VIP) for the Kubernetes control-plane endpoint, while HAProxy handled traffic to the Kubernetes API servers.
+
+The Kubernetes API endpoint was used by Kubernetes clients and administrative tools such as `kubectl` and Ansible, without requiring clients to connect directly to individual control-plane nodes.
+
+```text
+Kubernetes Clients
+kubectl / Ansible
+        │
+        ▼
+   Keepalived VIP
+ Kubernetes API Endpoint
+        │
+        ▼
+     HAProxy
+        │
+        ▼
+Kubernetes Control Plane
+   API Servers
+```
+
+Control-plane node counts and etcd topology are omitted from this public write-up.
+
+### Application Traffic
+
+Application traffic was handled separately from the Kubernetes API path. NGINX Ingress was used to expose applications through their configured domains and route incoming requests to the appropriate Kubernetes services.
+
+```text
+User
+  │
+  ▼
+Application Domain
+  │
+  ▼
+NGINX Ingress
+  │
+  ▼
+Kubernetes Service
+  │
+  ▼
+Application Pods
+```
+
+### CI/CD and Delivery
+
+Bitbucket was used for source control and Bamboo for CI/CD. Bamboo pipelines were used to build and deploy applications across the different environments.
+
+```text
+Bitbucket
+    │
+    ▼
+  Bamboo
+    │
+    ├───────────────┐
+    ▼               ▼
+Kubernetes       Docker Compose
+Environments     Workloads
+```
+
+Internal JFrog repositories were used to provide application dependencies and required artifacts within the restricted environment.
+
+### Operations and Automation
+
+Ansible was used for infrastructure and operational automation, while AWX was used to execute operational tasks and workflows across multiple virtual machines when required.
+
+Prometheus and Grafana were used for monitoring and operational visibility.
+
+### Architecture Summary
+
+* **Kubernetes API Endpoint:** Keepalived → Virtual IP → HAProxy → Kubernetes API servers
+* **Application Runtime:** Application Domain → NGINX Ingress → Kubernetes Service → Application Pods
+* **CI/CD:** Bitbucket → Bamboo → Deployment environments
+* **Operations:** Ansible / AWX for automation; Prometheus / Grafana for monitoring
+
 
 ## Kubernetes Platform
 
