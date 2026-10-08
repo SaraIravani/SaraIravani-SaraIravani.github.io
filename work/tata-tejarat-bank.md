@@ -133,7 +133,16 @@ Prometheus and Grafana were used for monitoring and operational visibility.
 
 ## Kubernetes Platform
 
-[To be completed]
+I worked as part of the team responsible for provisioning and maintaining Kubernetes clusters across multiple application environments, rather than owning the cluster architecture independently.
+
+My hands-on work included updating and maintaining Ansible automation used for Kubernetes infrastructure, supporting cluster and node-level operational tasks, and deploying and troubleshooting workloads across different environments.
+
+The Kubernetes clusters were provisioned using kubeadm, with Ansible used to automate and maintain infrastructure-related tasks.
+
+Calico was used as the Kubernetes CNI. I worked with Kubernetes networking as part of day-to-day platform operations.
+
+For storage, I worked with NFS and Longhorn, including storage configuration and troubleshooting according to application and project requirements.
+
 
 ## CI/CD
 
