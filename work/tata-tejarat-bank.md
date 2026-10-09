@@ -19,7 +19,7 @@ permalink: /work/tata-tejarat-bank/
 
 ## Overview
 
-From September 2019 to January 2023, I worked as a Kubernetes / DevOps Engineer in Tejarat Bank's environment, through TATA. I worked across multiple enterprise banking projects in a highly restricted, air-gapped environment, supporting application delivery and platform operations across different teams and workloads. Across these projects, more than 80 microservices were running on the platforms I supported. The environment evolved over time, with some workloads initially using Docker Compose and Docker Swarm before Kubernetes became the main orchestration platform. As part of the team, I worked hands-on in Kubernetes operations, application deployment, CI/CD, automation, monitoring, security-related activities, and production troubleshooting.
+From September 2019 to January 2023, I worked as a Kubernetes / DevOps Engineer in Tejarat Bank's environment, through TATA. I worked across multiple enterprise banking projects in a highly restricted, air-gapped environment, supporting application delivery and platform operations across different teams and workloads. Across these projects, more than 80 microservices were running on the platforms I supported.
 
 ## My Role and Contribution
 
@@ -47,13 +47,20 @@ The environment included multiple application projects and separate Dev, QA, sta
 
 For the Kubernetes clusters, HAProxy and Keepalived were used for cluster traffic and high availability, with NGINX Ingress used as the ingress layer for application traffic.
 
-The platform evolved from Docker Compose and Docker Swarm workloads to Kubernetes as the main orchestration platform, so I supported different deployment models across projects.
-
 The platform evolved over time. Some workloads initially ran using Docker Compose and Docker Swarm, while Kubernetes later became the main container orchestration platform. This required supporting different deployment models and operational requirements during the transition and across different application projects.
 
 ## Architecture
 
 The environment was built on VMware ESXi, with virtual machines supporting the Kubernetes platform and application workloads. The architecture supported multiple application projects across Dev, QA, staging, and production environments.
+
+Kubernetes API Endpoint: Keepalived → Virtual IP → HAProxy → Kubernetes API servers
+
+Application Runtime: Application Domain → NGINX Ingress → Kubernetes Service → Application Pods
+
+CI/CD: Bitbucket → Bamboo → Deployment environments
+
+Operations: Ansible / AWX for automation; Prometheus / Grafana for monitoring
+
 
 ### Kubernetes API Endpoint
 
@@ -210,7 +217,16 @@ My responsibilities included:
 
 This experience strengthened my practical understanding of metrics collection, dashboard queries, alerting, centralized log analysis, and Kubernetes operations in an enterprise environment.
 
+## Challenges
 
+**1. Resource Management and Workload Stability**  
+Managed and troubleshot workloads in Docker Compose and Kubernetes environments, where resource usage could affect the stability of other services running on shared infrastructure.
+
+**2. Troubleshooting in a Restricted Environment**  
+Worked in an air-gapped banking environment where external internet access was restricted. Application dependencies and container images had to be managed through internal repositories and controlled access.
+
+**3. Deployment Reliability Across Environments**  
+Supported application deployments across Dev, QA, staging, and production, troubleshooting configuration differences, deployment failures, and workload health issues.
 
 
 ## Operations and Incidents
