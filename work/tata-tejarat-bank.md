@@ -151,7 +151,7 @@ Calico was used as the Kubernetes CNI. I worked with Kubernetes networking as pa
 For storage, I worked with NFS and Longhorn, including storage configuration and troubleshooting according to application and project requirements.
 
 
-## CI/CD
+## CI/CD and Artifact Management
 
 I worked with Bamboo and Bitbucket Server to support application build, container image creation, and deployment artifact preparation in the restricted banking environment.
 
@@ -165,6 +165,20 @@ My contributions included:
 * **Troubleshooting and release procedures:** Investigated CI/CD pipeline failures and deployment issues and followed project-specific release approval procedures. Production deployments could require approval from the development team or project management, depending on the project and environment.
 
 The pipeline steps and level of deployment automation varied by project. Internal repositories were important for managing application dependencies, container images, and deployment artifacts in an environment without direct Internet access.
+
+## Troubleshooting and Operational Resilience
+
+Supported Kubernetes platforms in a security-restricted banking environment, troubleshooting infrastructure, workload, storage, and configuration issues across controlled environments.
+
+My troubleshooting approach focused on identifying whether an issue originated at the node, cluster, or application level. I used Kubernetes status information, resource descriptions, events, container and system logs, and monitoring data to investigate failures and determine appropriate corrective actions.
+
+Depending on the issue, remediation included configuration corrections, workload recovery, storage and connectivity validation, and node-level recovery when required. I also investigated resource pressure, scheduling constraints, persistent volume provisioning, container image availability, and application configuration.
+
+### CI/CD and Deployment Troubleshooting
+
+Investigated slow builds and deployment delays across Bamboo and Bitbucket CI/CD workflows. Troubleshooting included reviewing pipeline execution and configuration, identifying dependency-related issues, and correcting dependency definitions in Docker Compose files or Kubernetes manifests where applicable. Validated the resulting configuration and deployment behavior to help ensure reliable application delivery.
+
+Specific production incidents, project configurations, and environment details are omitted to respect banking confidentiality.
 
 
 ## Automation and Container Orchestration
