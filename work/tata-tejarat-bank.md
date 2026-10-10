@@ -8,8 +8,8 @@ role: "Kubernetes / DevOps Engineer"
 technologies:
   - Kubernetes
   - Docker
-  - Docker Swarm
   - Docker Compose
+  - Docker Swarm
   - Bamboo
   - Bitbucket
   - Ansible
@@ -18,32 +18,37 @@ technologies:
   - Prometheus
   - Grafana
   - Rancher
+  - Calico
 permalink: /work/tata-tejarat-bank/
 ---
 
 ## Overview
 
-From September 2019 to January 2023, I worked as a Kubernetes / DevOps Engineer through TATA, supporting multiple application projects within the Tejarat Bank environment. I worked in a security-restricted environment where virtual machines had no direct Internet access, supporting application delivery and platform operations across different teams and workloads. Across these projects, more than 80 microservices ran on the platforms I supported.
+From September 2019 to January 2023, I worked as a Kubernetes / DevOps Engineer through TATA, supporting multiple application projects within the Tejarat Bank environment.
+
+I supported application delivery and platform operations across Dev, QA, staging, and production environments. Across these projects, more than 80 microservices ran on the platforms I supported.
+
+The infrastructure operated in a security-restricted environment where virtual machines had no direct Internet access. Internal repositories and controlled access mechanisms supported application builds, dependency management, and delivery workflows.
 
 ## My Role and Contribution
 
-I contributed to application delivery and platform operations across Dev, QA, staging, and production environments. My responsibilities covered container platforms, Kubernetes operations, CI/CD, artifact management, automation, security controls, and monitoring.
+My responsibilities covered container platforms, Kubernetes operations, CI/CD, artifact management, infrastructure automation, security controls, and monitoring.
 
 | Area | My Contribution |
 |---|---|
 | **Container Platforms** | Worked with Docker Compose, Docker Swarm, and Kubernetes across application projects. Updated deployment files and configurations for application settings, health checks, volumes, storage, and workload placement. |
-| **Kubernetes Platform** | Contributed to provisioning and maintaining Kubernetes clusters using kubeadm and Ansible. Updated Ansible code as infrastructure and project requirements evolved and supported workload deployment and troubleshooting across environments. |
+| **Kubernetes Platform** | Contributed to provisioning and maintaining Kubernetes clusters using kubeadm and Ansible. Updated Ansible code as infrastructure and project requirements evolved and supported workload deployment and troubleshooting. |
 | **CI/CD** | Configured and modified Bamboo plans, templates, and pipeline steps connected to Bitbucket. Built container images and prepared deployment artifacts. Automated deployment steps in some projects, following project-specific release and approval procedures. |
 | **Artifact Management** | Managed project dependencies and JFrog repository configuration, including creating virtual repositories and providing appropriate repository access to development teams. |
-| **Security and Access Control** | Worked with Kubernetes namespaces, RBAC, and NetworkPolicies. Used SonarQube for code-quality checks and Trivy for container image vulnerability scanning within delivery workflows. |
+| **Security and Access Control** | Worked with Kubernetes namespaces, RBAC, and NetworkPolicies. Used SonarQube for code-quality checks and Trivy for container image vulnerability scanning. |
 | **Automation** | Used Ansible and shell scripts for infrastructure and operational tasks. Used AWX to execute recurring security patching, software installation, and other tasks across multiple virtual machines. |
-| **Monitoring and Troubleshooting** | Used Prometheus and Grafana for monitoring, Rancher for workload visibility and log investigation, and Graylog for reviewing available logs. Investigated CI/CD failures, deployment issues, configuration problems, and Kubernetes workload health. |
+| **Monitoring and Troubleshooting** | Used Prometheus and Grafana for monitoring, Rancher for workload visibility and log investigation, and Graylog to review available logs. Investigated CI/CD failures, deployment issues, configuration problems, and Kubernetes workload health. |
 
 ## Environment and Constraints
 
 The environment was based on VMware ESXi, with virtual machines that had no direct Internet access. Application dependencies and artifacts were managed through internal repositories and controlled access mechanisms.
 
-JFrog provided an internal source for required dependencies and artifacts, with proxy-based access used where external connectivity was required.
+JFrog provided an internal source for required dependencies and artifacts. Proxy-based access was used where external connectivity was required.
 
 I supported multiple application projects across separate Dev, QA, staging, and production environments. The deployment approach varied by project: some workloads used Docker Compose or Docker Swarm, while Kubernetes was used for other application workloads.
 
@@ -121,6 +126,8 @@ Ansible supported infrastructure and operational automation, while AWX provided 
 
 ## Kubernetes Platform
 
+The clusters were provisioned using kubeadm, with Ansible used to automate and maintain infrastructure-related tasks.
+
 I worked as part of the team responsible for provisioning and maintaining Kubernetes clusters across application environments, rather than owning the cluster architecture independently.
 
 My work included:
@@ -130,8 +137,6 @@ My work included:
 - Deploying and troubleshooting workloads across different environments.
 - Working with Calico as the Kubernetes Container Network Interface (CNI).
 - Working with NFS and Longhorn for application storage, including storage configuration and troubleshooting according to project requirements.
-
-The clusters were provisioned using kubeadm, with Ansible used to automate and maintain infrastructure-related tasks.
 
 ## CI/CD and Artifact Management
 
@@ -150,13 +155,13 @@ The level of deployment automation varied by project. This work supported applic
 
 ## Troubleshooting and Operational Challenges
 
-I supported troubleshooting across Kubernetes workloads, containerized applications, and CI/CD workflows in a security-restricted banking environment. My approach focused on identifying the affected component, examining its current state and configuration, and determining an appropriate corrective action.
+I supported troubleshooting across Kubernetes workloads, containerized applications, and CI/CD workflows. My approach focused on identifying the affected component, examining its current state and configuration, and determining an appropriate corrective action.
 
 ### Kubernetes Workload and Resource Troubleshooting
 
 When investigating unhealthy workloads or resource-related issues, I examined Kubernetes node and pod status, resource conditions, pod descriptions, events, and relevant container logs.
 
-The investigation involved distinguishing between node-level issues, workload configuration problems, and application-level failures. Depending on the findings, corrective actions could include correcting configuration, recovering affected workloads, or investigating node health and resource pressure.
+I used this information to distinguish between node-level issues, workload configuration problems, and application-level failures. Depending on the findings, corrective actions could include correcting configuration, recovering affected workloads, or investigating node health and resource pressure.
 
 ### CI/CD and Deployment Troubleshooting
 
@@ -166,9 +171,9 @@ After making a correction, I validated the relevant configuration and checked th
 
 ### Troubleshooting Under Restricted Network Access
 
-The restricted environment introduced additional considerations when investigating build and deployment failures. Virtual machines had no direct Internet access, so dependencies, container images, and other required resources had to be obtained through internal repositories and available controlled access mechanisms.
+Restricted network access introduced additional considerations when investigating build and deployment failures. Dependencies, container images, and other required resources had to be obtained through internal repositories and available controlled access mechanisms.
 
-Repository configuration, dependency availability, access permissions, and environment-specific settings were therefore important areas to check when troubleshooting delivery issues.
+Repository configuration, dependency availability, access permissions, and environment-specific settings were important areas to check when investigating delivery issues.
 
 Specific production incidents, project configurations, and sensitive banking infrastructure details are omitted to respect confidentiality.
 
@@ -184,7 +189,7 @@ My responsibilities included:
 - **Kubernetes configuration:** Developed and updated Kubernetes manifests based on application and project requirements.
 - **Configuration maintenance:** Updated automation code, scripts, and deployment configurations as infrastructure and project requirements evolved.
 
-These activities supported repeatable operational tasks and application configuration across different environments.
+This work supported repeatable operational tasks and consistent application configuration across different environments.
 
 ## Security and Access Control
 
@@ -236,9 +241,8 @@ These constraints formed part of the operational context for supporting applicat
 - **CI/CD and source control:** Bamboo, Bitbucket Server
 - **Build and dependency management:** Maven, JFrog
 - **Automation and scripting:** Ansible, AWX, Shell Scripting
-- **Monitoring and observability:** Prometheus, Grafana, Alertmanager, Rancher, Graylog
+- **Monitoring and observability:** Prometheus, Grafana, Rancher, Graylog
 - **Security and code quality:** Kubernetes RBAC, NetworkPolicies, Trivy, SonarQube
-- **Container administration:** Portainer
 
 ## What I Learned
 
