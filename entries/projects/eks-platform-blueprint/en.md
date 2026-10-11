@@ -7,9 +7,9 @@ slug: eks-platform-engineering-blueprint
 permalink: /entries/eks-platform-engineering-blueprint/
 date: 2026-10-11
 year: 2026
-image: "/images/projects/eks-platform-engineering-blueprint/cover.png"
-thumbnail: "/images/projects/eks-platform-engineering-blueprint/cover.png"
-cover: "/images/projects/eks-platform-engineering-blueprint/cover.png"
+image: "/images/projects/example-project/eks-platform-engineering-blueprint/cover.png"
+thumbnail: "/images/projects/example-project/eks-platform-engineering-blueprint/cover.png"
+cover: "/images/projects/example-project/eks-platform-engineering-blueprint/cover.png"
 cover_alt: "AWS EKS platform architecture blueprint"
 thumbnail_alt: "AWS EKS platform engineering design"
 label: "ARCHITECTURE BLUEPRINT"
