@@ -1,5 +1,5 @@
 ---
-title: "TATA / Tejarat Bank"
+title: "Kubernetes Platform & DevOps — TATA / Tejarat Bank"
 date: 2023-01-01
 type: project
 lang: en
