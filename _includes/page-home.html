@@ -1,6 +1,11 @@
 {% assign current_lang = page.lang | default: site.languages.default %}
 {% assign t = site.data.locales[current_lang] %}
-{% assign projects_only = site.pages | where: 'type', 'project' %}
+{% assign projects = site.pages
+  | where: 'lang', current_lang
+  | where: 'type', 'project'
+  | where_exp: 'item', 'item.slug != "example-project"'
+  | sort: 'date'
+  | reverse %}
 {% assign articles_only = site.pages | where: 'type', 'article' %}
 {% assign lang_entries = projects_only | concat: articles_only | where: 'lang', current_lang %}
 <div class="profile">
