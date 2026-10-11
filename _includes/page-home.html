@@ -1,11 +1,13 @@
+
 {% assign current_lang = page.lang | default: site.languages.default %}
 {% assign t = site.data.locales[current_lang] %}
 
-{% assign projects_only = site.pages
-  | where: 'type', 'project'
+{% assign lang_entries = site.pages
   | where: 'lang', current_lang
   | where_exp: 'item', 'item.slug != "example-project"'
+  | where_exp: 'item', 'item.slug != "example-article"'
 %}
+
 
 {% assign articles_only = site.pages
   | where: 'type', 'article'
