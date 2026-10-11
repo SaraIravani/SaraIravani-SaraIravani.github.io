@@ -1,13 +1,11 @@
-
 {% assign current_lang = page.lang | default: site.languages.default %}
 {% assign t = site.data.locales[current_lang] %}
 
-{% assign lang_entries = site.pages
+{% assign projects_only = site.pages
+  | where: 'type', 'project'
   | where: 'lang', current_lang
   | where_exp: 'item', 'item.slug != "example-project"'
-  | where_exp: 'item', 'item.slug != "example-article"'
 %}
-
 
 {% assign articles_only = site.pages
   | where: 'type', 'article'
@@ -15,7 +13,12 @@
   | where_exp: 'item', 'item.slug != "example-article"'
 %}
 
-{% assign lang_entries = projects_only | concat: articles_only %}
+{% assign work_only = site.pages
+  | where: 'lang', current_lang
+  | where_exp: 'item', 'item.url contains "/work/"'
+%}
+
+{% assign lang_entries = projects_only | concat: articles_only | concat: work_only %}
 <div class="profile">
   {% if site.author.avatar and site.author.avatar != '' %}<img class="profile-photo" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }} {{ t.accessibility.profile_photo_suffix }}">{% endif %}
   <div>
