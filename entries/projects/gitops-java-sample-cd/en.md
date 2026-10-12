@@ -1,6 +1,7 @@
 ---
 title: "GitOps Java Sample CD"
 type: project
+category: "CI/CD & GitOps"
 layout: case-study
 lang: en
 slug: gitops-java-sample-cd
