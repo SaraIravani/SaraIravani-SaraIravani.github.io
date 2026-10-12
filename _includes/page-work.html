@@ -1,7 +1,43 @@
 {% assign current_lang = page.lang | default: site.languages.default %}
 {% assign t = site.data.locales[current_lang] %}
-{% assign projects = site.pages | where: 'lang', current_lang | where: 'type', 'project' | sort: 'date' | reverse %}
-<div class="page-heading"><div><h1 class="page-title">{{ t.work.title }}</h1><p class="page-intro">{{ t.work.intro }}</p></div><p class="page-count">{{ projects | size }} {{ t.work.count_label }}</p></div>
-{% if projects.size > 0 %}
-<div class="item-list">{% for project in projects %}{% include work-entry.html item=project %}{% endfor %}</div>
-{% else %}<p>{{ t.work.empty }}</p>{% endif %}
+{% assign projects = site.pages | where: 'lang', current_lang | where: 'type', 'project' | where_exp: 'item', 'item.slug != "example-project"' | sort: 'date' | reverse %}
+
+<div class="page-heading">
+  <div>
+    <h1 class="page-title">{{ t.work.title }}</h1>
+    <p class="page-intro">{{ t.work.intro }}</p>
+  </div>
+  <p class="page-count">{{ projects | size }} {{ t.work.count_label }}</p>
+</div>
+
+{% assign cloud_projects = projects | where: 'category', 'Cloud & Platform Engineering' %}
+{% if cloud_projects.size > 0 %}
+<section class="project-category">
+  <h2 class="project-category-title">1. Cloud &amp; Platform Engineering</h2>
+  <div class="project-grid">
+    {% for project in cloud_projects %}{% include work-entry.html item=project %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% assign cicd_projects = projects | where: 'category', 'CI/CD & GitOps' %}
+{% if cicd_projects.size > 0 %}
+<section class="project-category">
+  <h2 class="project-category-title">2. CI/CD &amp; GitOps</h2>
+  <div class="project-grid">
+    {% for project in cicd_projects %}{% include work-entry.html item=project %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% assign security_projects = projects | where: 'category', 'Security & DevSecOps' %}
+{% if security_projects.size > 0 %}
+<section class="project-category">
+  <h2 class="project-category-title">3. Security &amp; DevSecOps</h2>
+  <div class="project-grid">
+    {% for project in security_projects %}{% include work-entry.html item=project %}{% endfor %}
+  </div>
+</section>
+{% endif %}
+
+{% if projects.size == 0 %}<p>{{ t.work.empty }}</p>{% endif %}
