@@ -1,15 +1,16 @@
 ---
 title: "Secure CI Challenge"
 type: project
+category: "Security & DevSecOps"
 layout: case-study
 lang: en
 slug: secure-ci-challenge
 permalink: /entries/secure-ci-challenge/
 date: 2026-10-06
 year: 2026
-image: "/images/projects/example-project/secure-ci-challenge/GitOps Java Sample CD.png"
-thumbnail: "/images/projects/example-project/secure-ci-challenge/GitOps Java Sample CD.png"
-cover: "/images/projects/example-project/secure-ci-challenge/GitOps Java Sample CD.png"
+image: "/images/projects/example-project/secure-ci-challenge/Secure CI Challenge.png"
+thumbnail: "/images/projects/example-project/secure-ci-challenge/Secure CI Challenge.png"
+cover: "/images/projects/example-project/secure-ci-challenge/Secure CI Challenge.png"
 cover_alt: "DevSecOps security scanning pipeline"
 thumbnail_alt: "GitHub Actions with Semgrep and Trivy"
 label: "DEVSECOPS LAB"
