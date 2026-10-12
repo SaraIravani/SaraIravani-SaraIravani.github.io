@@ -1,6 +1,7 @@
 ---
 title: "EKS Platform Engineering Blueprint"
 type: project
+category: "Cloud & Platform Engineering"
 layout: case-study
 lang: en
 slug: eks-platform-engineering-blueprint
