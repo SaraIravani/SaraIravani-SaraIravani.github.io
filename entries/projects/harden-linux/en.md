@@ -1,15 +1,16 @@
 ---
 title: "Linux Security Hardening with Ansible"
 type: project
+category: "Security & DevSecOps"
 layout: case-study
 lang: en
 slug: harden-linux
 permalink: /entries/harden-linux/
 date: 2026-10-07
 year: 2026
-image: "/images/projects/harden-linux/Linux Security Hardening.png"
-thumbnail: "/images/projects/harden-linux/Linux Security Hardening.png"
-cover: "/images/projects/harden-linux/Linux Security Hardening.png"
+image: "/images/projects/example-project/harden-linux/Linux Security Hardening.png"
+thumbnail: "/images/projects/example-project/harden-linux/Linux Security Hardening.png"
+cover: "/images/projects/example-project/harden-linux/Linux Security Hardening.png"
 cover_alt: "Linux security hardening and automation"
 thumbnail_alt: "Ansible-based Linux security hardening"
 label: "SECURITY AUTOMATION"
