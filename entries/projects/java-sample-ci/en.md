@@ -1,6 +1,7 @@
 ---
 title: "Java Sample CI Pipeline"
 type: project
+category: "CI/CD & GitOps"
 layout: case-study
 lang: en
 slug: java-sample-ci
