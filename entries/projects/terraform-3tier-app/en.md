@@ -7,9 +7,9 @@ slug: terraform-3tier-app
 permalink: /entries/terraform-3tier-app/
 date: 2026-10-10
 year: 2026
-image: "/images/projects/example-project/terraform-3tier-app/cover.svg"
-thumbnail: "/images/projects/example-project/terraform-3tier-app/cover.svg"
-cover: "/images/projects/example-project/terraform-3tier-app/cover.svg"
+image: "/images/projects/example-project/terraform-3tier-app/Terraform 3-Tier.png"
+thumbnail: "/images/projects/example-project/terraform-3tier-app/Terraform 3-Tier.png"
+cover: "/images/projects/example-project/terraform-3tier-app/Terraform 3-Tier.png"
 cover_alt: "Three-tier AWS infrastructure architecture"
 thumbnail_alt: "Terraform modular AWS architecture design"
 label: "INFRASTRUCTURE DESIGN"
