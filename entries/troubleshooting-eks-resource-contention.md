@@ -153,14 +153,3 @@ Finally, **good incident resolution is collaborative and evidence-led**. It mean
 Investigating resource-related problems in Amazon EKS is not just a matter of finding a high CPU graph or a restarted Pod. It means connecting application symptoms with resource behavior, distinguishing CPU throttling from memory-related failures, and selecting corrective actions based on evidence.
 
 Working through API and ingestion workload issues with Prometheus, Grafana, and the team strengthened my approach to structured troubleshooting. The goal is not simply to get a workload running again; it is to understand the failure well enough to make a reasoned change and validate the result.
-
-## Interview questions I use to test my understanding
-
-- What is the difference between CPU throttling and `OOMKilled`?
-- What evidence would you collect before changing CPU or memory requests and limits?
-- How would you distinguish resource contention from a database or network bottleneck?
-- What does the Horizontal Pod Autoscaler do, and what does it not do?
-- Why might adding replicas fail to improve application latency?
-- How would you verify that a remediation worked?
-
-When discussing an incident in an interview, I aim to explain the evidence I reviewed, the reasoning behind the team's decisions, my own contribution, and what I learned—without claiming commands, configuration changes, or results I cannot substantiate.
