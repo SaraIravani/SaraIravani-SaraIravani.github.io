@@ -1,6 +1,7 @@
 ---
 title: "Terraform 3-Tier AWS Architecture"
 type: project
+category: "Cloud & Platform Engineering"
 layout: case-study
 lang: en
 slug: terraform-3tier-app
