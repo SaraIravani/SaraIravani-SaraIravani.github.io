@@ -10,10 +10,10 @@
   </a>
   <div class="project-card-body">
     <p class="project-card-desc">{{ include.item.excerpt | strip_html | strip_newlines }}</p>
-    {% if include.item.technologies.size > 0 %}<p class="project-card-tags">{{ include.item.technologies | join: ' · ' }}</p>{% endif %}
+    {% if include.item.technologies.size > 0 %}<p class="project-card-tags">{{ include.item.technologies | slice: 0, 5 | join: ' · ' }}</p>{% endif %}
     <div class="project-card-links">
       {% if include.item.code and include.item.code != '' %}<a href="{{ include.item.code }}">{{ t.work.code_label }}</a>{% endif %}
-      <a href="{{ include.item.url | relative_url }}">Case study <span aria-hidden="true">→</span></a>
+      <a href="{{ include.item.url | relative_url }}">Read case study <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </article>
