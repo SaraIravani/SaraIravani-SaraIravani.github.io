@@ -79,6 +79,8 @@ home:
   recent_title: "From the field"
   recent_intro: "Case studies from engineering work, with the context, investigation, and lessons that matter."
   archive_link: "View all work →"
+  work_url: "/work/"
+  writing_url: "/writing/"
   archive_url: "/archive/"
 
 work:
