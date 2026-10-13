@@ -1,5 +1,5 @@
 ---
-title: "EKS Platform Engineering Blueprint"
+title: "How should EKS workloads be isolated by capacity and risk?"
 type: project
 category: "Cloud & Platform Engineering"
 layout: case-study
@@ -19,7 +19,7 @@ technologies: [AWS, EKS, Kubernetes, Terraform, IAM, IRSA, EC2, Auto Scaling]
 code: "https://github.com/SaraIravani/eks-platform-engineering-blueprint"
 demo: ""
 paper: ""
-excerpt: "A production-oriented AWS EKS architecture blueprint covering workload isolation, multi-AZ availability, IAM boundaries, autoscaling, and cost-aware compute capacity."
+excerpt: "Different workloads need different capacity and availability guarantees. This architecture blueprint explores workload-specific node groups, placement controls, least-privilege access, autoscaling, and cost-aware compute choices."
 ---
 
 ## Overview
