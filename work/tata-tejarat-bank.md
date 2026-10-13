@@ -157,6 +157,36 @@ The level of deployment automation varied by project. This work supported applic
 
 I supported troubleshooting across Kubernetes workloads, containerized applications, and CI/CD workflows. My approach focused on identifying the affected component, examining its current state and configuration, and determining an appropriate corrective action.
 
+### Case Study: Resource Contention and Deployment Standardization
+
+**Context**
+
+Multiple application projects ran on an on-premises Kubernetes platform, sharing cluster resources. Resource configuration was not consistently applied across all application deployments.
+
+**Problem**
+
+During an operational incident, application processes began failing while CPU and memory utilization was high. The team identified a resource-intensive service as a source of impact on other workloads. As an immediate mitigation, the service was stopped to reduce the effect on the rest of the platform.
+
+**Response**
+
+The incident prompted a broader improvement effort rather than a one-off fix. Across the following days, deployment templates and configurations were reviewed and updated across multiple projects.
+
+- **Resource controls:** Resource settings were added or standardized for Kubernetes Deployments and Docker Compose-based applications, using controls appropriate to each deployment model.
+- **Shared templates:** Common deployment templates were updated so resource configuration could be applied more consistently across projects.
+- **Health checks:** Health checks were enabled as part of the broader effort to improve workload health detection and deployment consistency.
+
+**Technical considerations**
+
+Kubernetes resource requests and limits serve different purposes: requests inform scheduling, while limits constrain resource consumption. Their values should be chosen according to workload behavior and capacity needs. CPU limits can cause throttling, while memory limits can lead to container termination when usage exceeds the configured limit.
+
+Node affinity and pod anti-affinity are additional scheduling tools that can help express placement preferences or keep selected workloads apart. They are distinct from resource controls and should be chosen based on the scheduling requirement. They are included here as relevant technical considerations, not as confirmed changes made during this incident.
+
+**Outcome and lessons learned**
+
+The incident led to a broader effort to improve resource configuration and health-check consistency across multiple projects. It reinforced that shared platforms need repeatable deployment standards—not just a recovery action for the service that first exposes a problem.
+
+Specific recovery metrics and the precise configuration changes for the original incident are not included because they have not been independently confirmed.
+
 ### Kubernetes Workload and Resource Troubleshooting
 
 When investigating unhealthy workloads or resource-related issues, I examined Kubernetes node and pod status, resource conditions, pod descriptions, events, and relevant container logs.
