@@ -1,42 +1,69 @@
 {% assign current_lang = page.lang | default: site.languages.default %}
 {% assign t = site.data.locales[current_lang] %}
 
-{% assign projects_only = site.pages
-  | where: 'type', 'project'
-  | where: 'lang', current_lang
-  | where_exp: 'item', 'item.slug != "example-project"'
-%}
-
-{% assign articles_only = site.pages
-  | where: 'type', 'article'
-  | where: 'lang', current_lang
-  | where_exp: 'item', 'item.slug != "example-article"'
-%}
-
 {% assign work_only = site.pages
   | where: 'lang', current_lang
   | where_exp: 'item', 'item.url contains "/work/"'
 %}
 
-{% assign lang_entries = work_only %}
-<div class="profile">
-  {% if site.author.avatar and site.author.avatar != '' %}<img class="profile-photo" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }} {{ t.accessibility.profile_photo_suffix }}">{% endif %}
-  <div>
-    {% if site.author.name and site.author.name != '' %}<h1>{{ site.author.name }}</h1>{% endif %}
-    {% if site.author.role != '' or site.author.education != '' or site.author.location != '' %}<p>{% if site.author.role and site.author.role != '' %}<b>{{ site.author.role }}.</b>{% endif %} {% if site.author.education and site.author.education != '' %}<b>{{ site.author.education }}.</b>{% endif %} {% if site.author.location and site.author.location != '' %}<b>{{ site.author.location }}.</b>{% endif %}</p>{% endif %}
-    {% if site.author.email and site.author.email != '' %}<p class="small"><a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a></p>{% endif %}
+<section class="home-hero">
+  <div class="home-hero-copy">
+    <p class="home-eyebrow"><span class="home-status-dot"></span>{{ t.home.hero_eyebrow }}</p>
+    <h1 class="home-hero-title">{{ t.home.hero_title }}</h1>
+    <p class="home-hero-intro">{{ t.home.hero_intro }}</p>
+    <p class="home-hero-note">{{ site.author.role }} <span aria-hidden="true">/</span> {{ site.author.location }}</p>
+    <div class="home-hero-actions">
+      <a class="home-button home-button-primary" href="{{ t.home.archive_url | relative_url }}">{{ t.home.cta_work }} <span aria-hidden="true">↗</span></a>
+      <a class="home-button home-button-secondary" href="{{ '/writing/' | relative_url }}">{{ t.home.cta_writing }} <span aria-hidden="true">→</span></a>
+    </div>
   </div>
-</div>
+  {% if site.author.avatar and site.author.avatar != '' %}
+  <div class="home-hero-portrait">
+    <img class="profile-photo" src="{{ site.author.avatar | relative_url }}" alt="{{ site.author.name }} {{ t.accessibility.profile_photo_suffix }}">
+    <span class="home-portrait-caption">{{ t.home.portrait_caption }}</span>
+  </div>
+  {% endif %}
+</section>
 
-<h2 class="section-title no-rule">{{ t.home.about_title }}</h2>
-<div class="about-text">{% for paragraph in t.about %}<p>{{ paragraph }}</p>{% endfor %}</div>
+<section class="home-focus" aria-labelledby="home-focus-title">
+  <div class="home-section-heading">
+    <p class="home-kicker">{{ t.home.focus_kicker }}</p>
+    <h2 id="home-focus-title">{{ t.home.focus_title }}</h2>
+  </div>
+  <div class="home-focus-grid">
+    <article class="home-focus-card">
+      <span class="home-focus-index">01</span>
+      <h3>{{ t.home.focus_1_title }}</h3>
+      <p>{{ t.home.focus_1_text }}</p>
+    </article>
+    <article class="home-focus-card">
+      <span class="home-focus-index">02</span>
+      <h3>{{ t.home.focus_2_title }}</h3>
+      <p>{{ t.home.focus_2_text }}</p>
+    </article>
+    <article class="home-focus-card">
+      <span class="home-focus-index">03</span>
+      <h3>{{ t.home.focus_3_title }}</h3>
+      <p>{{ t.home.focus_3_text }}</p>
+    </article>
+  </div>
+</section>
 
-{% if lang_entries.size > 0 %}
-<h2 class="section-title">{{ t.home.recent_title }}</h2>
-<p class="section-intro">{{ t.home.recent_intro }}</p>
-<div class="recent-list">
-  {% assign recent = lang_entries | sort: 'date' | reverse %}
-  {% for entry in recent limit: site.appearance.recent_items_on_home %}{% include recent-entry.html item=entry %}{% endfor %}
-</div>
-<p class="more-link"><a href="{{ t.home.archive_url | relative_url }}">{{ t.home.archive_link }}</a></p>
+{% if work_only.size > 0 %}
+<section class="home-selected-work">
+  <div class="home-section-heading home-work-heading">
+    <div>
+      <p class="home-kicker">{{ t.home.work_kicker }}</p>
+      <h2>{{ t.home.recent_title }}</h2>
+      <p class="home-section-intro">{{ t.home.recent_intro }}</p>
+    </div>
+    <a class="home-text-link" href="{{ t.home.archive_url | relative_url }}">{{ t.home.archive_link }} <span aria-hidden="true">↗</span></a>
+  </div>
+  <div class="recent-list">
+    {% assign recent = work_only | sort: 'date' | reverse %}
+    {% for entry in recent limit: site.appearance.recent_items_on_home %}
+      {% include recent-entry.html item=entry %}
+    {% endfor %}
+  </div>
+</section>
 {% endif %}
