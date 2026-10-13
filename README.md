@@ -16,9 +16,9 @@ These technologies reflect different parts of my work history and are not necess
 
 ## Explore the portfolio
 
-- **[Visit the portfolio website](https://sarairavani.github.io/SaraIravani-SaraIravani.github.io/)**
-- **[Work and case studies](https://sarairavani.github.io/SaraIravani-SaraIravani.github.io/work/)**
-- **[Technical writing](https://sarairavani.github.io/SaraIravani-SaraIravani.github.io/writing/)**
+- **[Visit the portfolio website](https://sarairavani.github.io/)**
+- **[Work and case studies](https://sarairavani.github.io/work/)**
+- **[Technical writing](https://sarairavani.github.io/writing/)**
 - **[LinkedIn](https://www.linkedin.com/in/sara-iravani/)**
 - **[GitHub profile](https://github.com/SaraIravani)**
 
