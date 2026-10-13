@@ -63,7 +63,7 @@ home:
   about_title: "About"
   hero_eyebrow: "INSIDE THE PLATFORM / CLOUD & KUBERNETES"
   hero_title: "Reliable platforms.\nClearer operations."
-  hero_intro: "When platforms slow down, deployments fail, or infrastructure becomes harder to operate, I investigate the cause and improve reliability, automation, and operational consistency."
+  hero_intro: "I troubleshoot production issues, improve cloud and Kubernetes platforms, and automate infrastructure workflows to make systems more reliable and easier to operate."
   portrait_caption: "Practical engineering, grounded in real operations."
   cta_work: "Explore case studies"
   cta_writing: "Read the EKS case study"
