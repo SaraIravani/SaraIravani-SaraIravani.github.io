@@ -748,11 +748,11 @@ a:hover {
   font-size: clamp(27px, 3.2vw, 31px);
   line-height: 1.16;
   letter-spacing: -.045em;
-  background: linear-gradient(180deg, #f8fbff 8%, #b9d8ff 56%, #6aa7e8 100%);
+  background: linear-gradient(180deg, #fff7ed 8%, #fed7aa 56%, #fb923c 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 1px 0 rgba(5, 18, 38, .7), 0 3px 10px rgba(59, 130, 246, .12);
+  text-shadow: 0 1px 0 rgba(5, 18, 38, .7), 0 3px 10px rgba(249, 115, 22, .16);
 }
 
 .section-title,
@@ -761,11 +761,11 @@ a:hover {
 .work-featured-copy h2,
 .article-content h2,
 .about-section h2 {
-  background: linear-gradient(180deg, #f4f8ff 0%, #c5ddff 58%, #7bb7ef 100%);
+  background: linear-gradient(180deg, #fff7ed 0%, #fed7aa 58%, #fb923c 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  text-shadow: 0 1px 0 rgba(5, 18, 38, .65), 0 2px 7px rgba(59, 130, 246, .10);
+  text-shadow: 0 1px 0 rgba(5, 18, 38, .65), 0 2px 7px rgba(249, 115, 22, .14);
 }
 
 .section-title { font-size: 20px; }
@@ -778,8 +778,8 @@ a:hover {
 .work-projects-heading h2 { font-size: 27px; }
 .home-hero-title {
   font-size: clamp(36px, 5vw, 56px);
-  text-shadow: 0 1px 0 rgba(5, 18, 38, .65), 0 3px 12px rgba(59, 130, 246, .12);
-  background: linear-gradient(180deg, #ffffff 0%, #c8e0ff 58%, #7cb8f0 100%);
+  text-shadow: 0 1px 0 rgba(5, 18, 38, .65), 0 3px 12px rgba(249, 115, 22, .16);
+  background: linear-gradient(180deg, #fff7ed 0%, #fed7aa 58%, #fb923c 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
