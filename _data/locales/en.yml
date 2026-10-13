@@ -62,7 +62,7 @@ about_page:
 home:
   about_title: "About"
   hero_eyebrow: "INSIDE THE PLATFORM / CLOUD & KUBERNETES"
-  hero_title: "Reliable platforms.\nClearer operations."
+  hero_title: "Reliable platforms\nClearer operations"
   hero_intro: "When platforms slow down, deployments fail, or infrastructure becomes harder to operate, I investigate the cause and improve reliability, automation, and operational consistency."
   portrait_caption: "Practical engineering, grounded in real operations."
   cta_work: "Explore case studies"
