@@ -54,6 +54,8 @@ home:
   recent_title: "Dall'esperienza sul campo"
   recent_intro: "Casi studio di ingegneria, con il contesto, l'analisi e gli insegnamenti più importanti."
   archive_link: "Vedi tutti i lavori →"
+  work_url: "/it/work/"
+  writing_url: "/it/writing/"
   archive_url: "/it/archive/"
 
 work:
