@@ -818,13 +818,13 @@ a:hover {
 }
 
 
-/* Improve homepage hero-title contrast: solid vivid orange with a cool slate-blue shadow */
+/* Improve homepage hero-title contrast: vivid red-orange with a cool slate-blue shadow */
 .home-hero-title {
   background: none;
   -webkit-background-clip: border-box;
   background-clip: border-box;
-  -webkit-text-fill-color: #ff8500;
-  color: #ff8500;
+  -webkit-text-fill-color: #ff3b1f;
+  color: #ff3b1f;
   text-shadow:
     0 1px 0 #334155,
     1px 2px 0 #334155,
