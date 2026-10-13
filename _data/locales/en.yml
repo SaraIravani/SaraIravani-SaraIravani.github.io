@@ -6,10 +6,6 @@ navigation:
       url: "/about/"
     - title: "Projects"
       url: "/work/"
-    - title: "Writing"
-      url: "/writing/"
-    - title: "Archive"
-      url: "/archive/"
   contact: "Contact"
   cv: "CV"
 
@@ -66,7 +62,7 @@ home:
   hero_intro: "I work across AWS, Kubernetes, and on-premises environments, focusing on infrastructure automation, delivery workflows, observability, and production troubleshooting."
   portrait_caption: "Practical engineering, grounded in real operations."
   cta_work: "Explore case studies"
-  cta_writing: "Read technical notes"
+  cta_writing: "Read the EKS case study"
   focus_kicker: "WHERE I ADD VALUE"
   focus_title: "The work behind reliable systems"
   focus_1_title: "Platform engineering"
@@ -80,7 +76,7 @@ home:
   recent_intro: "Case studies from engineering work, with the context, investigation, and lessons that matter."
   archive_link: "View all work →"
   work_url: "/work/"
-  writing_url: "/writing/"
+  writing_url: "/entries/troubleshooting-eks-resource-contention/"
   archive_url: "/archive/"
 
 work:
