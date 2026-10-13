@@ -13,8 +13,8 @@
     <p class="home-hero-intro">{{ t.home.hero_intro }}</p>
     <p class="home-hero-note">{{ site.author.role }} <span aria-hidden="true">/</span> {{ site.author.location }}</p>
     <div class="home-hero-actions">
-      <a class="home-button home-button-primary" href="{{ t.home.archive_url | relative_url }}">{{ t.home.cta_work }} <span aria-hidden="true">↗</span></a>
-      <a class="home-button home-button-secondary" href="{{ '/writing/' | relative_url }}">{{ t.home.cta_writing }} <span aria-hidden="true">→</span></a>
+      <a class="home-button home-button-primary" href="{{ t.home.work_url | relative_url }}">{{ t.home.cta_work }} <span aria-hidden="true">↗</span></a>
+      <a class="home-button home-button-secondary" href="{{ t.home.writing_url | relative_url }}">{{ t.home.cta_writing }} <span aria-hidden="true">→</span></a>
     </div>
   </div>
   {% if site.author.avatar and site.author.avatar != '' %}
@@ -57,7 +57,7 @@
       <h2>{{ t.home.recent_title }}</h2>
       <p class="home-section-intro">{{ t.home.recent_intro }}</p>
     </div>
-    <a class="home-text-link" href="{{ t.home.archive_url | relative_url }}">{{ t.home.archive_link }} <span aria-hidden="true">↗</span></a>
+    <a class="home-text-link" href="{{ t.home.work_url | relative_url }}">{{ t.home.archive_link }} <span aria-hidden="true">↗</span></a>
   </div>
   <div class="recent-list">
     {% assign recent = work_only | sort: 'date' | reverse %}
