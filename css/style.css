@@ -818,16 +818,14 @@ a:hover {
 }
 
 
-/* Improve homepage hero-title contrast: vivid red-orange with a cool slate-blue shadow */
+/* Homepage hero title: clean white with a subtle blue-gray dimensional shadow */
 .home-hero-title {
   background: none;
   -webkit-background-clip: border-box;
   background-clip: border-box;
-  -webkit-text-fill-color: #ff3b1f;
-  color: #ff3b1f;
+  -webkit-text-fill-color: #F8FAFC;
+  color: #F8FAFC;
   text-shadow:
     0 1px 0 #334155,
-    1px 2px 0 #334155,
-    0 4px 0 rgba(51, 65, 85, .75),
-    0 7px 14px rgba(148, 163, 184, .28);
+    0 3px 8px rgba(51, 65, 85, .55);
 }
