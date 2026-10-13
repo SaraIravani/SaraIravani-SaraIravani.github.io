@@ -6,6 +6,10 @@ navigation:
       url: "/about/"
     - title: "Projects"
       url: "/work/"
+    - title: "Writing"
+      url: "/writing/"
+    - title: "Archive"
+      url: "/archive/"
   contact: "Contact"
   cv: "CV"
 
