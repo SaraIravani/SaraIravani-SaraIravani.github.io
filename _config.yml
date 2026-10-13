@@ -1,5 +1,5 @@
 locale: "en-US"
-title: "Sara Iravani"
+title: "Sara Iravani | Senior DevOps & Platform Engineer"
 description: "DevOps / Platform Engineer"
 url: "https://sarairavani.github.io"
 baseurl: "/SaraIravani-SaraIravani.github.io"
@@ -40,9 +40,6 @@ languages:
     - code: en
       label: "EN"
       home_url: "/"
-    - code: it
-      label: "IT"
-      home_url: "/it/"
 
 appearance:
   accent_color: "#2563EB"
