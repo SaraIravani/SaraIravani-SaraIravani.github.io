@@ -2,18 +2,50 @@
 {% assign t = site.data.locales[current_lang] %}
 {% assign projects = site.pages | where: 'lang', current_lang | where: 'type', 'project' | where_exp: 'item', 'item.slug != "example-project"' | sort: 'date' | reverse %}
 
-<div class="page-heading">
-  <div>
-    <h1 class="page-title">{{ t.work.title }}</h1>
-    <p class="page-intro">{{ t.work.intro }}</p>
+<header class="work-intro">
+  <p class="work-eyebrow">{{ t.work.eyebrow }}</p>
+  <div class="work-intro-row">
+    <div>
+      <h1 class="page-title">{{ t.work.title }}</h1>
+      <p class="work-lead">{{ t.work.intro }}</p>
+    </div>
+    <p class="page-count"><span>{{ projects | size }}</span><br>{{ t.work.count_label }}</p>
   </div>
-  <p class="page-count">{{ projects | size }} {{ t.work.count_label }}</p>
+  <p class="work-method">{{ t.work.method }}</p>
+</header>
+
+<section class="work-featured" aria-labelledby="work-featured-title">
+  <div class="work-featured-label"><span class="work-featured-dot"></span>{{ t.work.featured_label }}</div>
+  <div class="work-featured-content">
+    <div class="work-featured-copy">
+      <p class="work-featured-meta">{{ t.work.featured_meta }}</p>
+      <h2 id="work-featured-title">{{ t.work.featured_title }}</h2>
+      <p>{{ t.work.featured_excerpt }}</p>
+      <div class="work-featured-tags"><span>AWS EKS</span><span>Prometheus</span><span>Grafana</span><span>Incident investigation</span></div>
+      <a class="work-featured-link" href="{{ '/entries/troubleshooting-eks-resource-contention/' | relative_url }}">{{ t.work.featured_link }} <span aria-hidden="true">↗</span></a>
+    </div>
+    <div class="work-signal-panel" aria-hidden="true">
+      <div class="work-signal-top"><span>WORKLOAD SIGNALS</span><span>01 / FIELD NOTE</span></div>
+      <div class="work-signal-row"><span>API latency</span><span class="work-signal-line"><i class="signal-latency"></i></span><b>↑</b></div>
+      <div class="work-signal-row"><span>CPU throttling</span><span class="work-signal-line"><i class="signal-cpu"></i></span><b>!</b></div>
+      <div class="work-signal-row"><span>Memory pressure</span><span class="work-signal-line"><i class="signal-memory"></i></span><b>!</b></div>
+      <p>Observe → correlate → investigate</p>
+    </div>
+  </div>
+</section>
+
+<div class="work-projects-heading">
+  <div>
+    <p class="work-eyebrow">{{ t.work.lab_eyebrow }}</p>
+    <h2>{{ t.work.lab_title }}</h2>
+  </div>
+  <p>{{ t.work.lab_intro }}</p>
 </div>
 
 {% assign cloud_projects = projects | where: 'category', 'Cloud & Platform Engineering' %}
 {% if cloud_projects.size > 0 %}
 <section class="project-category">
-  <h2 class="project-category-title">1. Cloud &amp; Platform Engineering</h2>
+  <h3 class="project-category-title"><span>01</span> Cloud &amp; Platform Engineering</h3>
   <div class="project-grid">
     {% for project in cloud_projects %}{% include work-entry.html item=project %}{% endfor %}
   </div>
@@ -23,7 +55,7 @@
 {% assign cicd_projects = projects | where: 'category', 'CI/CD & GitOps' %}
 {% if cicd_projects.size > 0 %}
 <section class="project-category">
-  <h2 class="project-category-title">2. CI/CD &amp; GitOps</h2>
+  <h3 class="project-category-title"><span>02</span> CI/CD &amp; GitOps</h3>
   <div class="project-grid">
     {% for project in cicd_projects %}{% include work-entry.html item=project %}{% endfor %}
   </div>
@@ -33,7 +65,7 @@
 {% assign security_projects = projects | where: 'category', 'Security & DevSecOps' %}
 {% if security_projects.size > 0 %}
 <section class="project-category">
-  <h2 class="project-category-title">3. Security &amp; DevSecOps</h2>
+  <h3 class="project-category-title"><span>03</span> Security &amp; DevSecOps</h3>
   <div class="project-grid">
     {% for project in security_projects %}{% include work-entry.html item=project %}{% endfor %}
   </div>
