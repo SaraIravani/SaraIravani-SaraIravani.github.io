@@ -186,7 +186,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; text-de
 .topic-pill:hover, .topic-pill:focus-visible { border-color: var(--accent); color: var(--accent); }
 .paper-badge { display: inline-block; font: 12px var(--mono); letter-spacing: .03em; border: 1px solid var(--accent); color: var(--accent); padding: 3px 10px; border-radius: 4px; margin: 6px 0 2px; text-decoration: none !important; }
 .paper-badge:hover { background: var(--accent); color: var(--invert-fg); }
-.about-page .page-intro { max-width: 650px; font-size: 19px; line-height: 1.55; }
+.about-page .page-intro { max-width: 650px; font-size: 17px; line-height: 1.55; }
 .about-section { margin-top: 42px; }
 .about-section h2 { border-bottom: 1px solid var(--border); padding-bottom: 7px; }
 .project-hero { width: 100%; max-height: 400px; object-fit: cover; margin: 25px 0; border-radius: 3px; }
