@@ -1,5 +1,5 @@
 ---
-title: "GitOps Java Sample CD"
+title: "How can Kubernetes delivery stay traceable from CI to GitOps?"
 type: project
 category: "CI/CD & GitOps"
 layout: case-study
@@ -19,7 +19,7 @@ technologies: [Jenkins, Argo CD, Kubernetes, Docker, Maven, SonarQube, Trivy]
 code: "https://github.com/SaraIravani/gitops-java-sample-cd"
 demo: ""
 paper: ""
-excerpt: "A Java application delivery example combining Jenkins-based build stages, containerization, Kubernetes manifests, and an Argo CD-oriented GitOps workflow."
+excerpt: "Builds and deployments need clear responsibilities and versioned desired state. This sample separates Jenkins build stages from Kubernetes configuration and an Argo CD-oriented GitOps workflow."
 ---
 
 ## Overview
