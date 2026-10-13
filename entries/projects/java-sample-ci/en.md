@@ -1,5 +1,5 @@
 ---
-title: "Java Sample CI Pipeline"
+title: "How can Java builds and quality checks become repeatable?"
 type: project
 category: "CI/CD & GitOps"
 layout: case-study
@@ -19,7 +19,7 @@ technologies: [Jenkins, Maven, Java, Docker, SonarQube]
 code: "https://github.com/SaraIravani/Java-sample-ci"
 demo: ""
 paper: ""
-excerpt: "A sample Java application pipeline demonstrating automated source checkout, Maven builds, testing, code-quality analysis, and Docker image creation."
+excerpt: "Manual build steps can produce inconsistent results and delayed feedback. This sample organizes checkout, Maven build and tests, SonarQube analysis, and Docker image creation into a repeatable CI workflow."
 ---
 
 ## Overview
