@@ -36,9 +36,24 @@ about_page:
 
 home:
   about_title: "Chi sono"
-  recent_title: "Ultimi progetti e articoli"
-  recent_intro: "Una selezione dei contenuti pubblicati più di recente."
-  archive_link: "Vai all'archivio →"
+  hero_eyebrow: "NOTE DI INGEGNERIA / CLOUD & PLATFORM"
+  hero_title: "Piattaforme affidabili.\nOperazioni più chiare."
+  hero_intro: "Lavoro con AWS, Kubernetes e ambienti on-premises, con attenzione all'automazione dell'infrastruttura, ai flussi di rilascio, all'osservabilità e alla risoluzione dei problemi in produzione."
+  portrait_caption: "Ingegneria pratica, basata sull'esperienza operativa."
+  cta_work: "Esplora i casi studio"
+  cta_writing: "Leggi le note tecniche"
+  focus_kicker: "DOVE PORTO VALORE"
+  focus_title: "Il lavoro dietro sistemi affidabili"
+  focus_1_title: "Platform engineering"
+  focus_1_text: "Kubernetes e infrastruttura cloud pensati per essere ripetibili, comprensibili e semplici da gestire."
+  focus_2_title: "Rilascio e automazione"
+  focus_2_text: "Infrastructure as code e flussi CI/CD che riducono il lavoro manuale ripetitivo e rendono i rilasci più coerenti."
+  focus_3_title: "Operazioni in produzione"
+  focus_3_text: "Analisi guidata dall'osservabilità di problemi di workload, affidabilità e sicurezza in ambienti reali."
+  work_kicker: "ESPERIENZA SELEZIONATA"
+  recent_title: "Dall'esperienza sul campo"
+  recent_intro: "Casi studio di ingegneria, con il contesto, l'analisi e gli insegnamenti più importanti."
+  archive_link: "Vedi tutti i lavori →"
   archive_url: "/it/archive/"
 
 work:
