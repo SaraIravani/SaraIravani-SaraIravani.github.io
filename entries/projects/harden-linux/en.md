@@ -1,5 +1,5 @@
 ---
-title: "Linux Security Hardening with Ansible"
+title: "How can Linux security settings be applied consistently?"
 type: project
 category: "Security & DevSecOps"
 layout: case-study
@@ -19,7 +19,7 @@ technologies: [Ansible, Linux, SSH, Fail2Ban, Prometheus, Grafana]
 code: "https://github.com/SaraIravani/harden-linux"
 demo: ""
 paper: ""
-excerpt: "A role-based Ansible playbook suite for automating Linux security configuration, access controls, system hardening, auditing, and monitoring-related setup."
+excerpt: "Manual hardening is difficult to repeat consistently. This role-based Ansible project organizes access controls, system settings, auditing, and related security tasks into reusable playbooks."
 ---
 
 ## Overview
