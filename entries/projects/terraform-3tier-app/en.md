@@ -1,5 +1,5 @@
 ---
-title: "Terraform 3-Tier AWS Architecture"
+title: "How can AWS application tiers be isolated and maintained safely?"
 type: project
 category: "Cloud & Platform Engineering"
 layout: case-study
@@ -19,7 +19,7 @@ technologies: [Terraform, AWS, VPC, EC2, ALB, RDS, IAM, KMS, CloudWatch]
 code: "https://github.com/SaraIravani/terraform-3tier-app"
 demo: ""
 paper: ""
-excerpt: "A modular Terraform design for a three-tier AWS architecture, with network segmentation, scalable compute, private database access, and security-focused infrastructure decisions."
+excerpt: "A three-tier design needs clear network boundaries and controlled database access. This Terraform project separates web, application, and data layers into reusable infrastructure modules."
 ---
 
 ## Overview
