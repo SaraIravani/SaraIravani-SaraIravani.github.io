@@ -792,3 +792,27 @@ a:hover {
   .work-projects-heading h2 { font-size: 24px; }
 }
 
+
+
+/* ===== Final heading colors: orange only for the homepage hero title ===== */
+.page-title,
+.section-title,
+.home-section-heading h2,
+.work-projects-heading h2,
+.work-featured-copy h2,
+.article-content h2,
+.about-section h2 {
+  background: none;
+  -webkit-text-fill-color: #eaf2ff;
+  color: #eaf2ff;
+  text-shadow: none;
+}
+
+.home-hero-title {
+  background: linear-gradient(180deg, #ffb15c 0%, #ff8a24 52%, #f97316 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: #ff8a24;
+  text-shadow: 0 1px 0 rgba(5, 18, 38, .8), 0 3px 14px rgba(249, 115, 22, .28);
+}
