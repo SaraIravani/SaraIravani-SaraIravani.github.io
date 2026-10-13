@@ -1,5 +1,5 @@
 ---
-title: "Secure CI Challenge"
+title: "How can security findings surface earlier in CI?"
 type: project
 category: "Security & DevSecOps"
 layout: case-study
@@ -19,7 +19,7 @@ technologies: [GitHub Actions, Semgrep, Trivy, Docker, Node.js]
 code: "https://github.com/SaraIravani/secure-ci-challenge"
 demo: ""
 paper: ""
-excerpt: "A hands-on DevSecOps lab that integrates Semgrep static analysis and Trivy container scanning into a GitHub Actions workflow."
+excerpt: "Security issues are easier to review before release. This educational lab adds Semgrep static analysis and Trivy container scanning to a GitHub Actions workflow."
 ---
 
 ## Overview
